@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ministerstwo Rozwoju Cyfrowego</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            color: #171717;
+        }
+
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            background: #fff;
+        }
+
+        .header-inner {
+            max-width: 1180px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand img {
+            width: 58px;
+            height: 58px;
+            object-fit: contain;
+        }
+
+        .brand-text {
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 1.2;
+        }
+
+        .brand-text span {
+            display: block;
+            font-weight: 400;
+            color: #666;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        nav {
+            display: flex;
+            gap: 26px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f5f5f5;
+            padding: 90px 24px;
+        }
+
+        .hero-inner {
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            margin: 0;
+            max-width: 800px;
+            font-size: 52px;
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin-top: 25px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 24px;
+            background: #171717;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        .section {
+            max-width: 1180px;
+            margin: auto;
+            padding: 70px 24px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin: 0 0 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 28px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .about {
+            background: #f7f7f7;
+        }
+
+        .about-inner {
+            max-width: 1180px;
+            margin: auto;
+            padding: 70px 24px;
+        }
+
+        .about-inner p {
+            max-width: 850px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        footer {
+            background: #171717;
+            color: white;
+            padding: 35px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .language {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 65px 24px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="brand">
+            <img src="https://yurashiry.github.io/-at/logo.jpeg"
+                 alt="Logo Ministerstwa Rozwoju Cyfrowego">
+
+            <div class="brand-text">
+                Ministerstwo Rozwoju Cyfrowego
+                <span>Ministerstwo Rozwoju Cyfrowego</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#">Strona główna</a>
+            <a href="#ministerstwo">Ministerstwo</a>
+            <a href="#uslugi">Usługi</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <h1>
+            Ministerstwo Rozwoju Cyfrowego
+        </h1>
+
+        <p>
+            Rozwijamy cyfrową przyszłość, tworzymy nowoczesne rozwiązania
+            i wspieramy rozwój technologii oraz usług cyfrowych.
+        </p>
+
+        <a href="#ministerstwo" class="button">
+            Dowiedz się więcej
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="uslugi">
+
+    <h2>Nasze działania</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Cyfryzacja</h3>
+            <p>
+                Wspieramy rozwój cyfrowych usług publicznych
+                oraz nowoczesnej infrastruktury.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technologie</h3>
+            <p>
+                Promujemy nowe technologie, innowacje
+                i rozwiązania cyfrowe.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Bezpieczeństwo cyfrowe</h3>
+            <p>
+                Dbamy o bezpieczeństwo systemów oraz rozwój
+                nowoczesnych standardów cyfrowych.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="ministerstwo">
+
+    <div class="about-inner">
+
+        <h2>O Ministerstwie</h2>
+
+        <p>
+            Ministerstwo Rozwoju Cyfrowego jest instytucją odpowiedzialną
+            za rozwój cyfrowy, technologie informacyjne oraz nowoczesne
+            rozwiązania cyfrowe.
+        </p>
+
+        <p>
+            Naszym celem jest tworzenie prostych, bezpiecznych
+            i dostępnych usług cyfrowych dla obywateli oraz instytucji.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="kontakt">
+
+    <h2>Kontakt</h2>
+
+    <p>
+        Ministerstwo Rozwoju Cyfrowego
+    </p>
+
+    <p>
+        Oficjalny portal Ministerstwa Rozwoju Cyfrowego.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div>
+            <strong>Ministerstwo Rozwoju Cyfrowego</strong>
+            <p>© 2026 Ministerstwo Rozwoju Cyfrowego</p>
+        </div>
+
+        <div class="language">
+            Język strony: <strong>Altajski</strong>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
